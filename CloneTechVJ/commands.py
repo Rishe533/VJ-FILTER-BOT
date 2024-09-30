@@ -36,8 +36,8 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{me.username}?startgroup=true')
-        ],[
-            
+        ],[ InlineKeyboardButton('🕵️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🔍 ᴀʙᴏᴜᴛ', callback_data='about')     
         ]]
         if cd["update_channel_link"] != None:
             up = cd["update_channel_link"]
